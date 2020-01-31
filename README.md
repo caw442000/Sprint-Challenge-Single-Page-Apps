@@ -27,7 +27,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: The page doesn't refresh just the data is just there and displayed when asked for.  This makes the user experience more fluid.
 
 ## Project Set Up
 
@@ -36,7 +36,7 @@ Follow these steps to set up and work on your project:
 - [x]  Create a forked copy of this project.
 - [x]  Add TL as collaborator on GitHub.
 - [x]  Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ]  Create a new Branch on the clone: `git checkout -b <firstName-lastName>`.
+- [x]  Create a new Branch on the clone: `git checkout -b <firstName-lastName>`.
 - [ ]  Implement the project on this branch, committing changes regularly.
 - [ ]  Push commits: `git push origin <firstName-lastName>`.
 - [ ]  **LOOK** at your project directory and notice it's just a plain ol' React App that we've built using `create-react-app`.
@@ -69,8 +69,8 @@ _Display Data from a Server API_
 
 _Add a Router to this application using [React Router](https://reacttraining.com/react-router/web/guides/quick-start)._
 
-- [ ]  Hook up the Welcome page(Home page) and a Characters page with React Router.
-- [ ]  Use a styling or component library for part of or all of your application. (Pick at least 1 of: [s](https://react-bootstrap.github.io/)tyled-components or Reactstrap).
+- [x]  Hook up the Welcome page(Home page) and a Characters page with React Router.
+- [x]  Use a styling or component library for part of or all of your application. (Pick at least 1 of: [s](https://react-bootstrap.github.io/)tyled-components or Reactstrap).
 
 _Add 'Search by Name' feature._
 
