@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/Header.js";
 import WelcomePage from "./components/WelcomePage";
-import CharacterList from "./components/CharacterList.js";
+import CharacterList from "./components/CharacterList2.js";
 import {Route } from "react-router-dom";
 
 
