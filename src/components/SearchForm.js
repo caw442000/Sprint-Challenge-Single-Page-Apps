@@ -1,11 +1,10 @@
-import React from "react";
-import CharacterList from "./CharacterList";
+import React, { useState } from "react";
 
 const SearchForm = ({handleInputChange, query}) => {
  
   return (
     <section>
-      <div className="spells">
+      <div >
         <form className="search">
           <input
             type="text"

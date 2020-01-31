@@ -32,6 +32,6 @@ export default function CharacterList() {
       <SearchForm query = {query} handleInputChange = {handleInputChange}/> 
       <CharacterCard data = {data}/>
     </div>
-   
+
   );
 }
