@@ -33,8 +33,8 @@ const CharacterCard = ({data}) => {
   
     {data.map(data => {
       return (
-        <CharacterListDiv>
-        <CharacterCardDiv key={data.id}>
+        <CharacterListDiv key={data.id}>
+        <CharacterCardDiv>
           <h2>Name: {data.name}</h2>
           <h3>Status: {data.status}</h3>
           <h3>Species: {data.species}</h3>
