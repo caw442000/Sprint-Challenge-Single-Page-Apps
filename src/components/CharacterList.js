@@ -20,32 +20,34 @@ const CharacterListDiv = styled.div`
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
   const [data, setData] = useState([]);
-  const [query, setQuery] = useState("");
+  // const [query, setQuery] = useState("");
 
   useEffect(() => {
     // TODO: Add API Request here - must run in `useEffect`
     //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
+    // if the data has changed other wise don't run axios
+    
+    
     axios.get(`https://rickandmortyapi.com/api/character/`).then(response => {
       console.log(response);
-      const characters = response.data.results.filter(character =>
-        character.name.toLowerCase().includes(query.toLowerCase())
-      );
-      setData(characters);
+      // const characters = response.data.results.filter(character =>
+      //   character.name.toLowerCase().includes(query.toLowerCase())
+      // );
+     
+      setData(response.data.results);
     });
 
 
-  }, [query]);
+  }, []);
 
-  const handleInputChange = event => {
-    setQuery(event.target.value);
-  };
+  console.log ("data outside", data);
 
   return (
     <div>
       <h2>THE SEARCH</h2>
-      <SearchForm query = {query} handleInputChange = {handleInputChange}/> 
+      <SearchForm data = {data}/> 
      
-      <CharacterCard data = {data}/>
+      {/* <CharacterCard data = {data}/> */}
       
     </div>
 
